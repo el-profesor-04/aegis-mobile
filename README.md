@@ -133,7 +133,3 @@ flutter test
 **Phase 1**: Agentic routing between ingestion, search, and first aid RAG
 
 **Phase 2+**: Planned enhancements (see backlog for details)
-
-## License
-
-Proprietary — Aegis Health
