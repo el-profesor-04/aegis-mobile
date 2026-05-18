@@ -1,12 +1,12 @@
 # Aegis Mobile
 
-> **Backend & ML Infrastructure:** See [aegis](https://github.com/el-profesor-04/aegis) for the Python backend, data processing, model conversion, and temporal graph database implementation.
+> **Backend & ML Infrastructure:** See [aegis-health](https://github.com/el-profesor-04/aegis-health) for the Python backend, data processing, and temporal graph database implementation.
 
-Cross-platform mobile application for the Aegis personal health tracking and reasoning system. Built with Flutter, executes LiteRT models natively on-device with a native UI for logging, chat, graph visualization, and Phase 1 Agentic Routing.
+Android mobile application for the Aegis personal health tracking and reasoning system. Built with Flutter, executes LiteRT models natively on-device with a native UI for logging, chat, graph visualization, and Phase 1 Agentic Routing.
 
 ## Overview
 
-Aegis Mobile is a completely offline, sovereign health agent that runs on iOS and Android. It provides:
+Aegis Mobile is a completely offline, sovereign health agent that runs on Android. It provides:
 
 - **Real-time health event logging**: Users record symptoms, sleep, food, mood, exercise, medications
 - **On-device inference**: Gemma 4 E2B and MediaPipe BERT models execute natively without cloud connectivity
@@ -46,8 +46,7 @@ Both models execute natively in-process without external API calls.
 ### Prerequisites
 
 - Flutter SDK 3.0+ ([Install Flutter](https://docs.flutter.dev/get-started/install))
-- iOS 12.0+ or Android API Level 21+
-- Xcode 12+ (for iOS development)
+- Android API Level 21+
 - Android Studio or Android command-line tools (for Android development)
 
 ### Installation
@@ -63,12 +62,7 @@ Both models execute natively in-process without external API calls.
    flutter pub get
    ```
 
-3. Build for iOS:
-   ```bash
-   flutter build ios
-   ```
-
-   Or build for Android:
+3. Build for Android:
    ```bash
    flutter build apk
    ```
@@ -82,7 +76,6 @@ flutter run
 
 Release build:
 ```bash
-flutter build ios --release
 flutter build apk --release
 ```
 
@@ -103,7 +96,6 @@ aegis-mobile/
 │   │   └── embedding/               # MediaPipe embedder integration
 │   └── models/                      # Data models and types
 ├── android/                         # Android-specific configuration
-├── ios/                             # iOS-specific configuration
 ├── pubspec.yaml                     # Flutter dependencies
 └── README.md
 ```
